@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.body {
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(15, 14, 14, 0.801);
+}
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;    
+}
+img {
+    width: 100%;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 15px 0;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./img/back1.jpg") center/cover no-repeat;
+}
+/* Utility classes*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+.btn {
+    background: #71a529;
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: darkgreen;
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid #71a529;
+    border-radius: 20px;
+    margin: 15px 0;
+    transition: var(--transition);
+}
+.btn:hover {
+    background: #71a529;
+    color: #fff;
+}
+.active {
+    color: lightgreen !important;
+}
+/* ABOUT SECTION*/
+
+.about-content {
+    margin-top: 50px;
+}
+.about-content img {
+    width:140px;
+    height:140px;
+    border-radius: 50%;
+}
+.about-img {
+    background: #fff;
+    width:150px;
+    height:150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50%;
+    padding-top: 5px; 
+}
+.about-content h2{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #71a529;
+    padding-top: 30px;
+}
+.about-content h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    background: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    margin: 35px auto;
+    text-align: center;
+   
+}
+.social-icons {
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+    padding-top: 90px;
+}
+
+.social-icons ul a {
+    color: #fff;
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    text-decoration: none;
+}
+.social-icons ul {
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons ul a:hover{
+    background: #71a529;
+    border-color: #71a529;
+}
+.typing {
+    position: relative;
+   
+}
+.typing::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*Section part*/
+/*Section part one*/
+.section-one {
+    margin: 40px 0;
+    min-height: 100vh;
+}
+.sec-one-left {
+    height: 100vh;
+    background: url("./img/pexels-vitaly-vlasov-1655817.jpg") center/cover no-repeat;
+    box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+}
+.sec-one-left div {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+
+}
+.sec-one-left div h3 {
+    font-size: 28px;
+    opacity: 0.9;
+}
+.sec-one-left div p {
+    font-weight: 300;
+    opacity: 0.8s;
+}
+.sec-one-right h3 {
+    color: lightseagreen;
+    font-size: 28px;
+    
+}
+.sec-one-right >h3 {
+    text-align: center;
+}
+.sec-one-right p{
+    opacity: 0.9;
+    font-weight: 300;
+
+}
+.work-content {
+    margin: 50px 0;
+}
+.work-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+.work-img-1{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("./img/pexels-alex-andrews-821749.jpg") center/cover no-repeat;
+    height: 400px;
+    transition: var(--transition);
+}
+.work-img-2{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("./img/pexels-jessica-lewis-593322.jpg") center/cover no-repeat;
+    height: 400px;
+    transition: var(--transition);
+}
+.work-imgs div:hover {
+    box-shadow: 0 0 8px #000;
+    -webit-box-shaow: 0 0 8px #000;
+    -mz-box-shadow:  0 0 8px #000;
+}
+/*Section part two*/
+.section-two {
+    margin: 40px 0;
+
+}
+.section-two h2 {
+    text-align: center;
+    font-size: 40px;
+}
+.section-two span {
+    color: darkgrey;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.insta-imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.insta-imgs > div {
+    position: relative;
+}
+.icon-overlay {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    background: rgba(134, 194, 50, 0.4);
+    opacity: 0;
+    transition: var(--transition);
+}
+.insta-imgs > div:hover .icon-overlay {
+    opacity: 1;
+}
+/*end of section*/
+
+/*Footer*/
+.footer {
+    background: #141414;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer-container > div {
+    margin: 40px 0;
+}
+.footer-container h2 {
+    color: #71a529;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+.footer-container p {
+    opacity: 0.7;
+}
+.subs{
+    background: #000;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+.subs i {
+    font-size: 26px;
+    flex: 10%;
+    display: block;
+}
+.subs input {
+    flex: 60%;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 0 5px;
+    outline: 0;
+    color: #fff;
+}
+.subs button {
+    flex: 30%;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: bold;
+    background: #71a529;
+    border: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.subs button:hover {
+    color: #fff;
+}
+.footer > p {
+    text-align: center;
+    font-size: 14px;
+}
+/*************** galerija css ******************/
+.section-three{
+    margin: 40px 0;
+}
+.single-img{
+    position: relative;
+    margin: 10px;
+    width: 450px;
+    height: 450px;
+    
+}
+.single-img img {
+    width: 100%;
+    height: 100%;
+}
+.single-img-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px 30px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.single-img-content h3{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+/*************** Kontakt css ******************/
+.section-five{
+    margin: 40px 0;
+
+}
+.section-five .container div {
+    margin: 20px 0;
+
+}
+.contact-top {
+    text-align: center;
+}
+.contact-top h3 {
+    font-size: 28px;
+}
+.contact-top p {
+    font-weight: 300;
+    width: 70%;
+    margin: 0 auto;
+
+}
+.contact-middle div {
+    text-align: center;
+    padding: 25px;
+    background: #141414;
+    color: #fff;
+
+}
+.contact-middle div span {
+    display: block;
+}
+.contact-icon {
+    font-size: 30px;
+}
+.contact-middle div span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}   
+.contact-middle div p {
+    font-weight: 300;
+    opacity: 0.7;
+}
+.contact-bottom {
+    margin-top: 50px!important;
+}
+
+
+/*********Media Queries***********/
+@media screen and (min-width: 678px){
+    .contact-middle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about {
+        margin-top: 0;
+    }
+    
+}
+@media screen and (min-width: 800px){
+    /* section two */
+    .insta-imgs{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* section three */
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+    
+}
+@media screen and (min-width: 992px){
+    .about{
+        margin-top: 0;
+    }
+    .contact-middle {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .contact-bottom {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .section-one .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+    }
+    .sec-one-left {
+        align-self: center;
+    }
+    .work-content {
+        margin-top: 0;
+    }
+    .sec-one-left {
+        height: 100%;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }   
+}
+@media screen and (min-width: 1200px){
+    .footer-container > div{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and  (max-width:1024px){
+    .nav-links {
+    width: 60%;
+    }
+}
+
+@media screen and  (max-width:768px)
+{
+    body{
+        overflow-x: hidden;
+        background-size: auto;
+    }
+    nav {
+        width: 100%;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-active {
+        z-index: 1;
+        overflow-x: hidden;
+    }
+    .about-content h3 {
+        font-size: 20px;
+        width: 300px;
+        
+    }
+    .insta-imgs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+/*************** extra mali ekrani ******************/
+@media screen and (max-width: 500px){
+    body{
+        overflow-x: hidden;
+        background-size: auto;
+    }
+    .header{
+        overflow-x: hidden;
+    }
+    nav {
+        width: 100%;
+    }
+    .about-content .typing {
+        width: 300px;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .about-content h3{
+        width: 100%;
+    }
+    .about-content blockquote{
+        font-size: 16px;
+        width: 100%;
+    }
+    .subs{
+        width: 280px;
+    }
+    .subs i{
+        display: none;
+    }
+    .subs input{
+        width: 100%;
+    }
+    .subs button{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    h2{
+        font-size: 30px!important;
+    }
+    h3{
+        font-size: 20px!important;
+    }
+    p{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .work-imgs{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+.nav-active {
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
